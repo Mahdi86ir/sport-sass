@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -6,51 +7,44 @@
   list-style: none;
 }
 
-.header {
-  background: #fff;
+header {
+  width: 100%;
+  height: 15vh;
+}
+header nav {
+  padding: 0px 70px;
+  width: 100%;
+  height: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 2rem;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1000;
+  justify-content: space-evenly;
 }
-.header .logo {
-  font-size: 2.5rem;
-  color: #130f40;
-  font-weight: bolder;
-}
-.header .logo i {
-  color: #e67e22;
-}
-.header ul {
+header nav ul {
   display: flex;
-  gap: 20px;
+  justify-content: space-evenly;
+  flex: 70%;
+  font-size: 20px;
+  font-family: "DM Sans";
 }
-.header ul a {
-  margin: 0.1rem;
-  font-size: 24px;
-  color: #666;
-  transition: all 0.5s;
+@media screen and (max-width: 1180px) {
+  header nav ul {
+    font-size: 17px;
+  }
 }
-.header ul a:hover {
-  color: #e67e22;
-}
-.header .icons a, .header .icons div {
-  font-size: 24px;
-  margin-left: 1.5rem;
-  color: #130f40;
+header nav .btn {
+  width: 130px;
+  height: 50px;
+  font-size: 17px;
+  border: none;
+  background-color: #B8C2CE;
+  color: #F9FAFC;
   cursor: pointer;
-  transition: all 0.5s;
+  border-radius: 10px;
 }
-.header .icons a:hover, .header .icons div:hover {
-  color: #e67e22;
-}
-
-#menu-btn {
-  display: none;
+@media screen and (max-width: 1180px) {
+  header nav .btn {
+    font-size: 15px;
+    width: 100px;
+    height: 40px;
+  }
 }/*# sourceMappingURL=style.css.map */
